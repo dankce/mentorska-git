@@ -43,11 +43,26 @@ footer {
   gap: 70px;
   justify-content: CENTER;
   padding: 5px;
-
+}
 .music-range {
   accent-color: #4caf50;
 }
 input {
   width: 50%;
   padding: 5px;
+}
+
+.wrapper {
+  padding: 25px;
+  margin-bottom: 58px;
+  background-color: #111010;
+}
+
+.left-section {
+  color: #888;
+  background-color: #555;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  width: 15%;
+  padding: 10px;
 }
