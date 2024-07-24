@@ -43,6 +43,7 @@ footer {
   gap: 70px;
   justify-content: CENTER;
   padding: 5px;
+}
 
 .music-range {
   accent-color: #4caf50;
