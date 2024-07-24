@@ -17,6 +17,11 @@ ol {
   margin-top: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -48,6 +53,12 @@ footer {
 .music-range {
   accent-color: #4caf50;
 }
+
+.d-flex {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 input {
   width: 50%;
   padding: 5px;
@@ -60,7 +71,16 @@ input {
   display: flex;
 }
 
-.left-section {
+.left-sidebar,
+.right-section {
+  flex-basis: 25%;
+  flex-shrink: 0;
+  height: 80vh;
+  overflow: auto;
+}
+
+.left-section,
+.right-section {
   color: #888;
   background-color: #555;
   border: 1px solid transparent;
@@ -113,7 +133,9 @@ p {
 }
 
 .middle {
-  width: 65%;
+  flex-basis: 50%;
+  height: 80vh;
+  overflow-y: auto;
   margin: 0 15px;
   background: linear-gradient(#690d0d, #19191d);
 }
@@ -125,6 +147,38 @@ p {
 
 .section {
   padding: 30px 0;
+}
+
+.second.section,
+.third.section {
+  overflow-x: scroll;
+}
+
+.card .d-play,
+.card-bottom .d-play {
+  visibility: hidden;
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #4caf50;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  transform: translate(-50%, -50%);
+}
+
+.card,
+.card-bottom .image {
+  position: relative;
+}
+
+.card:hover .d-play,
+.card-bottom:hover .d-play {
+  visibility: visible;
 }
 
 .flex-parent,
@@ -182,4 +236,29 @@ p {
 
 .image img {
   width: 100px;
+}
+
+article {
+  background-color: #111010;
+  border-radius: 8px;
+  margin: 10px 20px;
+}
+
+article .media-content {
+  position: relative;
+}
+
+article .media-content span {
+  color: white;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+article .text-content {
+  padding: 20px;
+}
+
+article:hover .text-content {
+  background-color: #d3d1d1;
 }
