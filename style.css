@@ -16,3 +16,13 @@ ul,
 ol {
   margin-top: 0;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: #111010;
+  padding: 5px 0px;
+  margin-bottom: 0;
+  font-size: x-large;
+}
