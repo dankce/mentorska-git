@@ -53,10 +53,11 @@ input {
   padding: 5px;
 }
 
-.wrapper {
+.wrapperone {
   padding: 25px;
   margin-bottom: 58px;
   background-color: #111010;
+  display: flex;
 }
 
 .left-section {
@@ -64,7 +65,6 @@ input {
   background-color: #555;
   border: 1px solid transparent;
   border-radius: 8px;
-  width: 15%;
   padding: 15px;
 }
 
@@ -79,7 +79,6 @@ input {
   background-color: #555;
   border: 1px solid transparent;
   border-radius: 8px;
-  width: 15%;
   height: 72vh;
   padding: 15px;
 }
@@ -111,4 +110,76 @@ p {
   width: 60px;
   height: 50px;
   padding-right: 10px;
+}
+
+.middle {
+  width: 65%;
+  margin: 0 15px;
+  background: linear-gradient(#690d0d, #19191d);
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.flex-parent,
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.flex-parent {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.top,
+.left,
+.right {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  gap: 10px;
+}
+.top {
+  padding: 10px 20px;
+  background-color: #19191d1f;
+  color: #898991;
+}
+
+.card {
+  flex-basis: 30%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.137);
+  border-radius: 5px;
+}
+.card img {
+  width: 100px;
+}
+
+.card .content {
+  padding: 10px;
+  flex-basis: 70%;
+}
+
+.card-bottom {
+  flex-basis: 20%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.137);
+}
+
+.card-bottom img {
+  border: none;
+  border-radius: 5px;
+}
+
+.image img {
+  width: 100px;
 }
